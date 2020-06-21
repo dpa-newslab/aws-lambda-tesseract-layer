@@ -10,7 +10,7 @@ ARG DIST=/opt/build-dist
 # change OCR_LANG to enable the layer for different languages
 ARG OCR_LANG=deu
 # change TESSERACT_DATA_SUFFIX to use different datafiles (options: "_best", "_fast" and "")
-ARG TESSERACT_DATA_SUFFIX=_fast
+ARG TESSERACT_DATA_SUFFIX=_best
 ARG TESSERACT_DATA_VERSION=4.0.0
 
 RUN yum makecache fast; yum clean all && yum -y update && yum -y upgrade; yum clean all && \
@@ -51,3 +51,4 @@ RUN curl -L https://github.com/tesseract-ocr/tessdata${TESSERACT_DATA_SUFFIX}/ra
     curl -L https://github.com/tesseract-ocr/tessdata${TESSERACT_DATA_SUFFIX}/raw/${TESSERACT_DATA_VERSION}/${OCR_LANG}.traineddata > ${OCR_LANG}.traineddata
 
 WORKDIR /var/task
+
