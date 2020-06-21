@@ -1,6 +1,10 @@
 Tesseract OCR Lambda Layer
 ===
 
+Forked to make small modifications for dpa-newslab deployments.
+
+Original Readme follows:
+
 ### :sparkles: see also my [new repo](https://github.com/bweigel/aws-lambda-layers) for layer deployment via the AWS cloud development kit (CDK) :sparkles:
 
 This projects creates an AWS lambda layer that contains the [tesseract 4.0.0](https://github.com/tesseract-ocr/tesseract) OCR libraries.

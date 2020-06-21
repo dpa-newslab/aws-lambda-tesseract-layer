@@ -11,18 +11,18 @@
     "serverless": ">=1.34.0"
   },
   "scripts": {
-    "deploy": "./node_modules/serverless/bin/serverless deploy",
+    "deploy": "serverless deploy",
     "build": "./build.sh",
-    "sls": "./node_modules/serverless/bin/serverless"
+    "sls": ".serverless"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bweigel/aws-lambda-tesseract-layer.git"
+    "url": "git+https://github.com/dpa-newslab/aws-lambda-tesseract-layer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bweigel/aws-lambda-tesseract-layer/issues"
+    "url": "https://github.com/dpa-newslab/aws-lambda-tesseract-layer/issues"
   },
-  "homepage": "https://github.com/bweigel/aws-lambda-tesseract-layer#readme"
+  "homepage": "https://github.com/dpa-newslab/aws-lambda-tesseract-layer#readme"
 }
